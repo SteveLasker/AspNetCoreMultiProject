@@ -10,14 +10,14 @@ using Newtonsoft.Json;
 
 namespace Web.Controllers
 {
-    public class DoStuffController : Controller
+    public class Magic8BallController : Controller
     {
         private string _doSomethingBaseAddress;
         private string _doSomethingAPIUrl;
-        public DoStuffController()
+        public Magic8BallController()
         {
-            _doSomethingBaseAddress = "http://dostuffwebapi";
-            _doSomethingAPIUrl = "/api/DoSomething";
+            _doSomethingBaseAddress = "http://api";
+            _doSomethingAPIUrl = "/Magic8Ball";
         }
         // GET: /<controller>/
         public async Task<IActionResult> Index()

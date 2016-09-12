@@ -8,5 +8,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80"
-  dostuffwebapi:
-    image: dockertools.azurecr.io/dostuffwebapi
+  api:
+    image: dockertools.azurecr.io/aspnetcoremultiproject/api

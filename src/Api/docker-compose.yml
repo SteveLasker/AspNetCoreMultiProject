@@ -8,3 +8,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80"
+  web:
+    image: dockertools.azurecr.io/aspnetcoremultiproject/web
+    ports:
+      - "80:80"
