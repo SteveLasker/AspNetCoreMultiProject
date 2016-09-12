@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  api:
+    image: dockertools.azurecr.io/aspnetcoremultiproject/api${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"
