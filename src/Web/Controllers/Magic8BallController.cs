@@ -22,19 +22,28 @@ namespace Web.Controllers
         // GET: /<controller>/
         public async Task<IActionResult> Index()
         {
+            HttpResponseMessage response = null;
             //
             // Get the HttpRequest
             //
-            HttpClient client = new HttpClient();
-            HttpRequestMessage request = 
-                new HttpRequestMessage(HttpMethod.Get, _doSomethingBaseAddress + _doSomethingAPIUrl);
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpRequestMessage request =
+                    new HttpRequestMessage(HttpMethod.Get, _doSomethingBaseAddress + _doSomethingAPIUrl);
 
-            HttpResponseMessage response = await client.SendAsync(request);
+                response = await client.SendAsync(request);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                // eat the exception for now...
+            }
 
             //
             // Return a response from the Crazy 8 Ball Service
             //
-            if (response.IsSuccessStatusCode)
+            if (response != null && response.IsSuccessStatusCode)
             {
                 List<Dictionary<String, String>> responseElements = new List<Dictionary<String, String>>();
                 JsonSerializerSettings settings = new JsonSerializerSettings();
