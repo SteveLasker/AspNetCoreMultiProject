@@ -1,4 +1,0 @@
-docker exec -it 8be bash
-
-docker inspect 
-docker exec -d [id] dotnet --additionalprobingpath /root/.nuget/packages bin/Debug/netcoreapp1.0/Web.dll

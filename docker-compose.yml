@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  web:
+    image: user/web
+    build:
+      context: ./Web
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+
+  api:
+    image: user/api
+    build:
+      context: ./Api
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
