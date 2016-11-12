@@ -4,7 +4,7 @@ services:
   web:
     image: user/web
     build:
-      context: ./Web
+      context: ./src/Web
       dockerfile: Dockerfile
       args:
         source: ${DOCKER_BUILD_SOURCE}
@@ -12,7 +12,7 @@ services:
   api:
     image: user/api
     build:
-      context: ./Api
+      context: ./src/Api
       dockerfile: Dockerfile
       args:
         source: ${DOCKER_BUILD_SOURCE}

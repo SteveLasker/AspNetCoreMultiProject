@@ -6,7 +6,7 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
-      - ./Web:/app
+      - ./src/Web:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null
@@ -18,7 +18,7 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
-      - ./Api:/app
+      - ./src/Api:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null
