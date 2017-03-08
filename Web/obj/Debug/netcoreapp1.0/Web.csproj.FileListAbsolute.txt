@@ -1,0 +1,9 @@
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\bin\Debug\netcoreapp1.0\Web.deps.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\bin\Debug\netcoreapp1.0\Web.runtimeconfig.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\bin\Debug\netcoreapp1.0\Web.runtimeconfig.dev.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\bin\Debug\netcoreapp1.0\Web.dll
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\bin\Debug\netcoreapp1.0\Web.pdb
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\obj\Debug\netcoreapp1.0\Web.csprojResolveAssemblyReference.cache
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\obj\Debug\netcoreapp1.0\Web.AssemblyInfo.cs
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\obj\Debug\netcoreapp1.0\Web.dll
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Web\obj\Debug\netcoreapp1.0\Web.pdb

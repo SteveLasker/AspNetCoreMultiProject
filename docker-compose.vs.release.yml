@@ -2,6 +2,9 @@ version: '2'
 
 services:
   web:
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
     volumes:
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null
@@ -9,6 +12,9 @@ services:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
 
   api:
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
     volumes:
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null

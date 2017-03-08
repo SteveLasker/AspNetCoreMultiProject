@@ -1,8 +1,0 @@
-version: '2'
-
-services:
-  api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"

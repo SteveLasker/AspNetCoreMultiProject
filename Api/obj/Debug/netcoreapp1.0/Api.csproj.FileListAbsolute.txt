@@ -1,0 +1,9 @@
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\bin\Debug\netcoreapp1.0\Api.deps.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\bin\Debug\netcoreapp1.0\Api.runtimeconfig.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\bin\Debug\netcoreapp1.0\Api.runtimeconfig.dev.json
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\bin\Debug\netcoreapp1.0\Api.dll
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\bin\Debug\netcoreapp1.0\Api.pdb
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\obj\Debug\netcoreapp1.0\Api.AssemblyInfo.cs
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\obj\Debug\netcoreapp1.0\Api.dll
+c:\users\msspeaker\documents\visual studio 2017\Projects\Multi\Api\obj\Debug\netcoreapp1.0\Api.pdb
+C:\Users\msspeaker\Documents\Visual Studio 2017\Projects\Multi\Api\obj\Debug\netcoreapp1.0\Api.csprojResolveAssemblyReference.cache

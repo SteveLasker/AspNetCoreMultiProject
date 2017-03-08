@@ -2,17 +2,13 @@ version: '2'
 
 services:
   web:
-    image: user/web
+    image: web
     build:
-      context: ./src/Web
+      context: ./Web
       dockerfile: Dockerfile
-      args:
-        source: ${DOCKER_BUILD_SOURCE}
 
   api:
-    image: user/api
+    image: api
     build:
-      context: ./src/Api
+      context: ./Api
       dockerfile: Dockerfile
-      args:
-        source: ${DOCKER_BUILD_SOURCE}
