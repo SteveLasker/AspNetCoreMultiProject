@@ -10,6 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\banner1.svg" />
+    <Content Remove="wwwroot\images\banner2.svg" />
+    <Content Remove="wwwroot\images\banner3.svg" />
+    <Content Remove="wwwroot\images\banner4.svg" />
+    <Content Remove="wwwroot\images\DockerToolsForVSLogo.png" />
+    <Content Remove="wwwroot\images\Magic8Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="wwwroot\images\banner1.svg" />
     <Content Include="wwwroot\images\banner2.svg" />
     <Content Include="wwwroot\images\banner3.svg" />
