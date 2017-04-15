@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   web:
@@ -6,7 +6,7 @@ services:
       args:
         source: ${DOCKER_BUILD_SOURCE}
     volumes:
-      - ~/clrdbg:/clrdbg:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
@@ -16,7 +16,7 @@ services:
       args:
         source: ${DOCKER_BUILD_SOURCE}
     volumes:
-      - ~/clrdbg:/clrdbg:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"

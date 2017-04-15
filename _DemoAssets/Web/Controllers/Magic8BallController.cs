@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Web.Controllers
+namespace Web_UI.Controllers
 {
     public class Magic8BallController : Controller
     {

@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   web:
@@ -10,8 +10,8 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
       - ./Web:/app
-      - ~/.nuget/packages:/root/.nuget/packages:ro
-      - ~/clrdbg:/clrdbg:ro
+      - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
@@ -25,8 +25,8 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
       - ./Api:/app
-      - ~/.nuget/packages:/root/.nuget/packages:ro
-      - ~/clrdbg:/clrdbg:ro
+      - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
