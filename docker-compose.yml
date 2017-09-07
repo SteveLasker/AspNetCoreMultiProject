@@ -4,15 +4,11 @@ services:
   web:
     image: web
     build:
-      context: ./Web
-      dockerfile: Dockerfile
-    ports:
-      - "81:80"
+      context: .
+      dockerfile: Web/Dockerfile
 
   api:
     image: api
     build:
-      context: ./Api
-      dockerfile: Dockerfile
-    ports:
-      - "82:80"
+      context: .
+      dockerfile: Api/Dockerfile
