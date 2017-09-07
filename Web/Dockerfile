@@ -17,11 +17,20 @@ COPY Web/Web.csproj Web/
 RUN dotnet restore
 COPY . .
 WORKDIR /src/Web
+RUN dotnet build -c $BuildConfiguration -o /app
+
+# unit testing, based on the compiled builder output
+FROM builder AS test
+WORKDIR /src/Web.test
+RUN dotnet test 
+
+# if unit tests are complete, create the published output for the optimized image
+FROM builder AS publish
+ARG BuildConfiguration=Release
 RUN dotnet publish -c $BuildConfiguration -o /app
-ENTRYPOINT ["dotnet", "Web.dll"]
 
 # Create an optimized image, from base, using the output from the builder image
 FROM base AS production
 WORKDIR /app
-COPY --from=builder /app .
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "Web.dll"]
