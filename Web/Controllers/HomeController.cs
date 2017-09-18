@@ -29,6 +29,7 @@ namespace Web.Controllers
             ViewData["OSDESCRIPTION"] = RuntimeInformation.OSDescription;
             ViewData["PROCESSARCHITECTURE"] = RuntimeInformation.ProcessArchitecture;
             ViewData["FRAMEWORKDESCRIPTION"] = RuntimeInformation.FrameworkDescription;
+            ViewData["ASPNETCOREPACKAGEVERSION"] = Environment.GetEnvironmentVariable("ASPNETCORE_PKG_VERSION");
             ViewData["ASPNETCORE_ENVIRONMENT"] = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
             StringBuilder envVars = new StringBuilder();
