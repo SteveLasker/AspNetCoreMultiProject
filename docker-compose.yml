@@ -2,13 +2,13 @@ version: '3'
 
 services:
   web:
-    image: ${DOCKER_REGISTRY}web
+    image: web
     build:
       context: .
       dockerfile: Web/Dockerfile
 
   api:
-    image: ${DOCKER_REGISTRY}api
+    image:api
     build:
       context: .
       dockerfile: Api/Dockerfile
