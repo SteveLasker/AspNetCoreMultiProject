@@ -1,9 +1,9 @@
 # For more info see: http://aka.ms/VSContainerToolingDockerfiles
-FROM microsoft/aspnetcore:2.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/aspnetcore-build:2.0 AS builder
+FROM mcr.microsoft.com/dotnet/sdk AS builder
 ARG BuildConfiguration=Release
 WORKDIR /src
 COPY *.sln ./
